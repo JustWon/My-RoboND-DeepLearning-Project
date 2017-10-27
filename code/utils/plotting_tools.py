@@ -67,6 +67,7 @@ def get_pred_files(subset_name):
 
 def get_im_file_sample(grading_data_dir_name, subset_name, pred_dir_suffix=None, n_file_names=10):
     path = os.path.join('..', 'data', grading_data_dir_name)
+    print(path)
     ims = np.array(get_im_files(path, subset_name)) 
     masks = np.array(get_mask_files(path, subset_name))  
     
